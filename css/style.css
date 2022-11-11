@@ -1,0 +1,127 @@
+.contenedor{
+    width: 70%;
+    min-height: 400px;
+    margin: 50px auto;
+    display: flex;
+    border: 4px solid rgb(14, 187, 240);
+}
+
+
+.contenedor .Derecha{
+    background:  rgb(196, 37, 135);
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor .Izquierda{
+    background: rgb(183, 169, 221);
+    width: 50%;
+    text-align: center;
+}
+.Derecha h2{
+color: rgb(26, 20, 20);
+}
+
+.Izquierda h2{
+    color: rgb(9, 8, 14);
+}
+
+.Derecha #figura{
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+    background: rgb(34, 31, 168);
+    transition: 1s;
+}
+
+.Izquierda button{
+    border: 2px solid   rgb(0, 0, 0);
+    background: rgb(118, 120, 151);
+    color: rgb(231, 145, 231);
+    padding: 8px 24px;
+    font-size: 20px;
+    margin: 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.Izquierda button:hover{
+    border-radius: 15px 0 15px 0;
+    background: rgb(100, 10, 245);
+    color: rgb(0, 0, 0);
+}
+
+#figura.Circulo{
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transition: 1S;
+    background: rgb(20, 233, 38);
+}
+
+#figura.Rombo{
+border-style: 20%;
+    transform: rotate(315deg);
+    transition: 1s;
+    background: #e70606;
+    border: 4px solid #2c0909;
+    
+}
+
+#figura.Triangulo{
+    width: 0px;
+        height: 0px;
+        border-right: 100px solid rgb(161, 46, 104);
+        border-top: 100px solid rgb(161, 46, 104);
+        border-left: 100px solid rgb(161, 46, 104);
+        border-bottom: 150px solid #ffffff;
+        shape-outside: none;
+        transition: 2s;
+}
+
+#figura.top {
+    transform: translateY(-100px);
+    transition: 1s;
+    background: #04ffff;
+    border: 4px solid #000000;
+}
+
+#figura.Left {
+    transform: translateX(-100px);
+    transition: 1s;
+    background: #080404;
+    border: 4px solid #000000;
+}
+
+#figura.Butom {
+    transform: translateY(100px);
+    transition: 1s;
+    background: #e205a0;
+    border: 4px solid #000000;
+}
+
+#figura.Right {
+    transform: translateX(100px);
+    transition: 1s;
+    background: #201f1f;
+    border: 4px solid #000000;
+}
+#figura.DiagonalIz {
+
+    transform: translate(-100px, -100px);
+    transition: 1s;
+    background: #def703;
+    border: 4px solid #000000;
+}
+
+#figura.DiagonalDe {
+    transform: translate(100px, 100px);
+    transition: 1s;
+    background: #da5305;
+    border: 4px solid #000000;
+}
+
+#figura.gif {
+    background: url(../img/eche.gif);
+    background-size: cover;
+}
+
